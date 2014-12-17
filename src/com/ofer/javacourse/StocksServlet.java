@@ -10,8 +10,8 @@ public class StocksServlet extends HttpServlet {
 		int num2=3;
 		int num3=7;
 		int result = (num1+num2)*num3;
-		resp.setContentType("text/plain");
-		String resultStr = new String("Result of ("+num1+"+"+num2+")*"+num3+"="+result);
+		resp.setContentType("text/html");
+		String resultStr = new String("<h1>Result of ("+num1+"+"+num2+")*"+num3+"="+result+"</h1>");
 		resp.getWriter().println(resultStr);
 	//	resp.getWriter().println("Hello, world");
 	}
